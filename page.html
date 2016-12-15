@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>K Meyer | Writer and User Experience Designer</title>
+    
+<!--Site by Katie Meyer, created fall 2016
+Thank you for taking the time to look at my code. If you notice any errors, please email me! kmeyerto@gmail.com. I'd love to hear from you and welcome criticism. I don't want to end up on /r/softwaregore!
+-->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<!--BOOTSTRAP CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css.map">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css.map">
+
+<!--CSS-->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!--FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+<!--JS CARNIVAL-->
+    <script>
+    var value = $.cookie('the_cookie'),
+    isNewSession = $.cookie('is_new_session') != 'false',
+    date = null;
+
+if (isNewSession) {
+    // set cookie for next visit during this session
+    debug("new session!");
+    $.cookie('is_new_session', 'false', { path:'/' });
+}
+
+debug("cookie value = " + value);
+
+if (value == "never again") {
+    
+    // nothing to do
+    
+} else if (/^\d+$/.test(value || "")) {
+
+    date = new Date();
+    date.setTime(value);
+
+    debug("date from cookie = " + date);
+
+    var today = new Date();
+
+    if (date.getDate() != today.getDate() ||
+        date.getMonth() != today.getMonth() ||
+        date.getYear() != today.getYear()) {
+
+        // date is other than today
+        $('#landingBack').delay(1000).slideDown(400);
+        $("#close").click(function(e) {
+            $("#landingBack").slideToggle(400);
+
+            // if you want the message to be displayed never again,
+            // move setting the cookie outside this click handler
+            $.cookie('the_cookie', 'never again', { expires: 365, path: '/' }); // expires in 365 days
+        });
+    } else {
+        debug("same date");
+    }
+
+
+} else if ((value || "") == "") {
+
+    $.cookie('the_cookie', new Date().getTime(), { expires: 365, path: '/' }); // expires in 365 days
+    debug("date empty, setting to = " + new Date().getTime());
+}
+
+
+function debug(msg) {
+    $("#debug").append($("<div />").html(msg));
+}
+    </script>
+</head>
+
+<body>
+
+<header class="col-md-12">
+<div class="col-md-4 name">Katie Meyer</div>
+
+<div class="col-md-4"></div>
+
+<nav class="col-md-4">
+<div class="col-md-6">Writing</div>
+<div class="col-md-6">Design</div></nav>
+</header>
+
+<div class="hero">
+<div class="col-md-4 title" id="landingFirst">
+<h1><span class="greeting">Nice to meet you. </span>
+    <span class="intro"><br/>I'm Katie, a writer and user experience designer. <span class="sub">I make meaningful paths through complex information.</span></span>
+</h1>
+</div>
+
+<div class="col-md-4 title" id="landingBack">
+<h1>Good to see you again. 
+<span class="title-sub">I'm still a writer and UX designer. </span>
+</h1>
+</div>
+
+<div class="col-md-4 title" id="landingReturn">
+<h1>We can't keep running into each other like this.
+<span class="title-sub">If you want to keep the conversation going, please email me at kmeyerto@gmail.com. </span>
+</h1>
+</div>
+
+<div class="col-md-8">
+<div class="col-md-6"></div>
+<div class="col-md-6 menu">
+<div class="cube-s">
+        <div class="topFaces" id="topface4">  
+                <div>
+                   
+                </div>
+        </div>
+        <div class="leftFaces" id="leftface4">
+            <h2><a href="ADDRESS" alt="Portfolio" title="Portfolio">PORTFOLIO</a></h2>
+        </div>
+        <div class="rightFaces" id="rightface4">
+             
+        </div>
+</div>
+
+<div class="cube-twos"> <!-- WEB DESIGN -->
+        <div class="topFaces" id="topface1">
+                <div>
+                </div>
+        </div>
+        <div class="leftFaces" id="leftface1">
+                 <h2><a href="ADDRESS" alt="Contact" title="Contact">PROCESS</a></h2>
+                 
+                  
+        </div>
+        <div class="rightFaces" id="rightface1">
+               
+        </div>
+</div>
+
+<div class="cube-threes">
+        <div class="topFaces" id="topface2">
+                <div>
+                  
+                </div>
+        </div>
+        <div class="leftFaces" id="leftface2">
+                       
+          
+        </div>
+        <div class="rightFaces" id="rightface2">
+        
+           <h2><a href="ADDRESS" alt="Blog" title="Blog">CV</a></h2>
+ 
+        </div>
+</div>
+
+<div class="cube-fours"> <!-- UI + UE --> 
+        <div class="topFaces" id="topface3">
+                <div>
+               
+                </div>
+        </div>
+        <div class="leftFaces" id="leftface3">
+          
+           
+                                  </div>
+        <div class="rightFaces" id="rightface3">
+              
+        </div>
+</div>
+</div>
+
+<!--
+<div class="col-md-2"></div>
+<div class="col-md-2 explore">Writing</div>
+<div class="col-md-2 explore">Design</div>
+<div class="col-md-2 explore">CV</div>
+<div class="col-md-2 explore">Contact</div>
+-->
+</div>
+</div><!--end hero-->
+
+<div class="wrapper">
+<div class="col-md-12 main">
+<div class="col-md-4 explainer">
+<h3>CV</h3>
+<p>With 10 years of experience writing and designing in different industries, I've developed a research-based, iterative design practice.</p>
+</div>
+
+<div class="col-md-8 positions">
+<div class="col-md-12 position">
+<div class="col-md-12">
+<h4>Crowdbabble</h4>
+<h5>Senior User Experience Designer | September 2015 to Present</h5>
+<p>Lead user experience designer, responsible for brand and content strategy across the site.</p>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Writing</div>
+<ul>
+<li>Created Crowdbabble content strategy; resposnible for Crowdbabble blog, case studies, and web copy</li>
+<li>Increased blog traffic from 12,209 in 2013-14 to 188,365 (Medium) and 43,984 (blog) in 2015-16; 19x increase</li>
+<li>Ranked on first page of Google results for critical keywords, like "trump clinton social media"</li>
+</ul>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Design</div>
+<ul>
+<li>Redesigned main Crowdbabble web app based on in-depth user research, built HTML and CSS</li>
+<li>Designed UX, UI, and did front end development for hashtag analytics web app</li>
+<li>Designed UX, UI, and did front end development for Hootsuite app for Instagram analytics</li>
+<li>Developed style guide and new brand identity for planned overhaul of Crowdbabble front end, all channels</li>
+<li>Created new user research and competitive analysis processes to serve design work</li>
+</ul>
+</div>
+</div><!--end position 1-->
+    
+<div class="col-md-12 position">
+<div class="col-md-12">
+<h4>OCAD</h4>
+<h5>User Experience Designer, Student, and Researcher | September 2013 to 2015 </h5>
+<p>User experience designer on professor-lead research projects and thesis, which centers on how digital natives read the book.</p>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Writing</div>
+<ul>
+<li>Won Best Written Thesis for program</li>
+<li>Research documentation for SSHRC-funded study on how digital natives read print</li>
+<li>Research-based essays in demanding digital theory and human-computer interaction classes</li>
+</ul>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Design</div>
+<ul>
+<li>Desiged UX and UI of website for professor-lead research project on Indigenous new media</li>
+<li>Designed and developed working prototype of social annotation web app based on study of digital natives</li>
+<li>In classes, worked with peers to create user personas, journeys, and prototypes for UX classes and CFC summer program</li>
+</ul>
+</div>
+</div><!--end position 2-->
+    
+<div class="col-md-12 position">
+<div class="col-md-12">
+<h4>Bell Media</h4>
+<h5>Online Content Associate | September 2012 to July 2013 </h5>
+<p>Designed layouts for overhaul of sympatico.ca, transition to loop.ca; contributed to new writing projects</p>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Writing</div>
+<ul>
+<li>Introduced new tools and platforms to content team, like Storify</li>
+<li>Developed (and wrote content for) new themes that incorporated all Bell Media channels</li>
+<li>Wrote evergreen Life and Style pieces and galleries</li>
+</ul>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Design</div>
+<ul>
+<li>Designed layouts for Life and Style sections (travel, cooking, entertainment)</li>
+<li>Incorporated new features with social channels across Bell Media brands</li>
+<li>Worked with a team to launch the site under tight deadlines and technical constraints</li>
+</ul>
+</div>
+</div><!--end position 3-->
+    
+<div class="col-md-12 position">
+<div class="col-md-12">
+<h4>Sunnybrook Health and Sciences Centre</h4>
+<h5>Web Communications Specialist | May 2011 to May 2012 </h5>
+<p>Responsible for maintaining, updating Sunnybrook Research Institute website and contributing to social media strategy</p>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Writing</div>
+<ul>
+<li>Wrote content for Sunnybrook social media channels</li>
+<li>Desigend content strategy and social media campaigns for fundraising events, like Raise a Flag</li>
+</ul>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Design</div>
+<ul>
+<li>Designed layouts for new pages and updated old ones, executing ideas with CRM and basic HTML</li>
+<li>Brought offline data online for patients, including breast cancer resources</li>
+<li>Interviewed patients, doctors, and reviewed analytics to design better user journeys on the site; focused on wayfinding and navigation through deluge of resources</li>
+<li>Built and launched Sunnybrook International site with CRM, basic CSS</li>
+</ul>
+</div>
+</div><!--end position 3-->
+    
+<div class="col-md-12 position">
+<div class="col-md-12">
+<h4>Sunnybrook Health and Sciences Centre</h4>
+<h5>Ward Clerk | Part Time June 2005 to May 2011</h5>
+<p>To support overabundance of unpaid internships, worked as a secretary on hectic palliative and intensive care units</p>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Responsibilities</div>
+<ul>
+<li>Nursing payroll and scheduling</li>
+<li>Transportation for patient appointments and events</li>
+<li>All patient charts and files</li>
+<li>Patient admissions, discharges, and transfers </li>
+</ul>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Design</div>
+<ul>
+<li>Obsession with efficiency and distaste for inelegant system design begins</li>
+</ul>
+</div>
+</div><!--end position 4-->
+    
+<div class="col-md-12 position">
+<div class="col-md-12">
+<h4>Random House NY, Sullivan Entertainment, Beetlebox Media</h4>
+<h5>Intern | Summers 2005 to 2011</h5>
+<p>Developed experience in filmmaking and project development</p>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Writing</div>
+<ul>
+    <li>Production assistant on feature films</li>
+    <li>Wrote script for nonfiction special on Mozart, to accompany feature opera adaptation</li>
+<li>Wrote coverage on slush pile</li>
+</ul>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Project Development</div>
+<ul>
+<li>Analyzed social media trends and industry data to build cases for projects</li>
+<li>Helped manage workflow for early stages of film projects, including grant applications and sourcing raw material</li>
+</ul>
+</div>
+</div><!--end position 5-->
+    
+<div class="col-md-12 position">
+<div class="col-md-12 header">
+<h4>The Saint, The Daily Californian</h4>
+<h5>Reporter and Editor | 2006 to 2010</h5>
+<p>Developed experience in filmmaking and project development</p>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Writing</div>
+<ul>
+    <li>Arts reporting: First person accredited to major film festival for both papers, covering Cannes, Sundance, and London Film Festivals</li>
+    <li>News reporter: 26/27 front page stories on a variety of beats, including crime, the recession, and the election</li>
+    <li>Won Story of the Week for linking defunding of UC research labs to Obama's plans to reduce nuclear arsenal</li>
+    <li>News stories picked up on Huffington Post and Politico</li>
+    <li>Increased traffic to YouTube channel 4x</li>
+</ul>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Design</div>
+<ul>
+<li>Started as a production assistant on student newspaper, editing and finalizing layout</li>
+<li>As section editor, redesigned layouts and style guide to modernize print edition</li>
+<li>Designed and built blog for The Saint when the paper did not have a website</li>
+</ul>
+</div>
+</div><!--end position 5-->
+    
+</div><!---end positions--->
+
+</div><!---end main--->
+</div><!---end wrapper--->
+
+<footer>
+<div class="col-md-12">
+<div class="col-md-4 name">
+Katie Meyer (c) 2016
+Made with Bootstrap, HTML5, CSS3 and JavaScript.
+Contact me</div>
+
+<div class="col-md-4"></div>
+
+<div class="col-md-4"><h4>Latest Writing</h4>
+    <ul><a href="https://medium.com/the-social-reader/in-the-final-hours-of-the-election-who-is-winning-on-social-media-7243016e3d7b" target="_blank" alt="Trump prediction will open in a new tab">Predicting Trump's Win</a></ul>
+    <ul><a href="https://medium.com/the-social-reader/what-happens-when-the-front-page-of-the-internet-hates-you-axe-steals-reddit-content-and-finds-out-67c6680d563b#.sbjnjghjo" target="_blank" alt="When Reddit Turns On You will open in a new tab">When Reddit Turns on You</a></ul>
+    <ul><a href="https://medium.com/the-social-reader/diy-politics-on-the-social-network-for-conservatives-d1c131d4de59#.vz6op95lu" target="_blank" alt="Pinterest article will open in a new tab">Pinterest Culture Wars</a></ul>
+</div>
+</div>
+</footer>
+
+
+</body>
+</html>

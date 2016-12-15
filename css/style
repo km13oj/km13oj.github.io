@@ -1,0 +1,107 @@
+/*
+Stylesheet by Katie Meyer, created summer 2016
+Normally I work with SCSS
+*/
+
+
+/*****FONTS******/
+
+@font-face {
+	font-family: 'Majesti Banner Book';
+	src: url('MajestiBanner-Book.eot');
+	src: url('MajestiBanner-Book.eot?#iefix') format('embedded-opentype'),
+		url('MajestiBanner-Book.woff') format('woff'),
+		url('MajestiBanner-Book.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Majesti Banner';
+	src: url('MajestiBanner-HeavyItalic.eot');
+	src: url('MajestiBanner-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+		url('MajestiBanner-HeavyItalic.woff') format('woff'),
+		url('MajestiBanner-HeavyItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Majesti Banner Book';
+	src: url('MajestiBanner-BookItalic.eot');
+	src: url('MajestiBanner-BookItalic.eot?#iefix') format('embedded-opentype'),
+		url('MajestiBanner-BookItalic.woff') format('woff'),
+		url('MajestiBanner-BookItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Majesti Banner';
+	src: url('MajestiBanner-Bold.eot');
+	src: url('MajestiBanner-Bold.eot?#iefix') format('embedded-opentype'),
+		url('MajestiBanner-Bold.woff') format('woff'),
+		url('MajestiBanner-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Majesti Banner';
+	src: url('MajestiBanner-MediumItalic.eot');
+	src: url('MajestiBanner-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('MajestiBanner-MediumItalic.woff') format('woff'),
+		url('MajestiBanner-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Majesti Banner';
+	src: url('MajestiBanner-BoldItalic.eot');
+	src: url('MajestiBanner-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('MajestiBanner-BoldItalic.woff') format('woff'),
+		url('MajestiBanner-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Majesti Banner';
+	src: url('MajestiBanner-Medium.eot');
+	src: url('MajestiBanner-Medium.eot?#iefix') format('embedded-opentype'),
+		url('MajestiBanner-Medium.woff') format('woff'),
+		url('MajestiBanner-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Majesti Banner';
+	src: url('MajestiBanner-Light.eot');
+	src: url('MajestiBanner-Light.eot?#iefix') format('embedded-opentype'),
+		url('MajestiBanner-Light.woff') format('woff'),
+		url('MajestiBanner-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Majesti Banner';
+	src: url('MajestiBanner-Heavy.eot');
+	src: url('MajestiBanner-Heavy.eot?#iefix') format('embedded-opentype'),
+		url('MajestiBanner-Heavy.woff') format('woff'),
+		url('MajestiBanner-Heavy.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Majesti Banner';
+	src: url('MajestiBanner-LightItalic.eot');
+	src: url('MajestiBanner-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('MajestiBanner-LightItalic.woff') format('woff'),
+		url('MajestiBanner-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
