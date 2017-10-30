@@ -3,10 +3,9 @@ Stylesheet by Katie Meyer, created summer 2016
 */
 
 /***** HEADING ******/
-
 /*** Sub ***/
 
-/*
+/*PALETTE
 Blue: a7d7ec
 Grey: e1e1e1
 Dark Grey: 606060
@@ -14,27 +13,26 @@ Contrast Yellow: fefb19
 Pink Red: #ecbca7 OR #e39c7d
 */
 
-/*
+/*TYPE
 Headline: 2.5em
 Sub: 1.5em;
 P: 1.1em;
 Data vis label: text-transform: uppercase; 1.1em;
 Data vis sub:  .9em;
-
 Hero headline - Majesti
 Other headline - Gill
 P + general - open sans
 */
 
-/* padding left, padding bottom
+/* STRUCTURE
+padding left, padding bottom
 Main frame: 32px;
 Item: 16px, 24px
 Sub item: 0px, 16px
 Sub-sub item: 0px, 8px
-
 Item base: 8px, 16px
-
 Item sub: 4px, 8px
+*/
 
 
 /***** BASE ******/
@@ -547,7 +545,7 @@ left: 0px;
 transition: transform 1s linear;
 }
 
-.cube-s:hover {
+.cube-s:active {
 -webkit-transform: translate(108px, 63px);
 -moz-transform: translate(108px, 63px);
 -o-transform: translate(108px, 63x);
@@ -555,7 +553,7 @@ transition: transform 1s linear;
 transform: translate(108px, 63px);
 }
 
-.cube-twos:hover {
+.cube-twos:active {
 -webkit-transform: translate(-108px, -63px);
 -moz-transform: translate(-108px, -63px);
 -o-transform: translate(-108px, -63px);
@@ -563,7 +561,7 @@ transform: translate(108px, 63px);
 transform: translate(-108px, -63px);
 }
 
-.cube-threes:hover {
+.cube-threes:active {
 -webkit-transform: translate(108px, -63px);
 -moz-transform: translate(108px, -63px);
 -o-transform: translate(108px, -63px);
@@ -571,7 +569,7 @@ transform: translate(-108px, -63px);
 transform: translate(108px, -63px);
 }
 
-.cube-fours:hover {
+.cube-fours:active {
 -webkit-transform: translate(-108px, -63px);
 -moz-transform: translate(-108px, -63px);
 -o-transform: translate(-108px, -63px);
