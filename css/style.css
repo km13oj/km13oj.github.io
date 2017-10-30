@@ -404,7 +404,10 @@ header {
 /****** FOOTER *******/
 
 footer {
-    padding: 32px;
+    padding-top: 32px;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-bottom: 64px;
     margin-top: 32px;
 }
 
