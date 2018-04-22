@@ -427,12 +427,16 @@ vertical-align: bottom !important;
 margin-top: 45%;
     border: 0px;
     background-image:none;
+     cursor: pointer;
 }
 
 .carousel-indicator, .carousel-control .glyphicon {
     color: #FFFFFF;
     padding: 4px;
     background-color: #606060;
+    cursor: pointer;
+    background-image:none;
+    border: 0px;
 }
 
 /****** FOOTER *******/
