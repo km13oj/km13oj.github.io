@@ -433,7 +433,7 @@ header {
 
 .carousel-indicator, .carousel-control .glyphicon {
     color: #FFFFFF !important;
-    padding: 4px !important;
+    padding: 8px !important;
     background-color: #606060 !important;
     opacity: 1 !important;
     cursor: pointer;
