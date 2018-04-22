@@ -422,6 +422,11 @@ header {
     width: 100%;
 }
 
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
 .carousel-indicators, .carousel-control {
     color: #FFFFFF !important;
     vertical-align: bottom !important;  
