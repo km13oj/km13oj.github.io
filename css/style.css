@@ -74,7 +74,8 @@ a:focus {
     border-bottom-width: 4px;
     border-bottom-color: #FFFFFF;
     padding-bottom: -2px;
-     transition-duration: .3s;
+    transition-duration: .3s;
+    cursor: pointer;
 }
 
 a:hover {
@@ -401,6 +402,26 @@ header {
 }
 
 
+.carousel {
+    min-height: 100px;
+    height: auto;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    transition-duration: .3s;
+    width: 100%;
+}
+
+.carousel p {
+    height: auto;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    transition-duration: .3s;
+}
+
+.carousel .item {
+    width: 100%;
+}
+
 /****** FOOTER *******/
 
 footer {
@@ -586,7 +607,9 @@ height: 100%;
 margin-top: 10px;	
 }
 
-/* CUBE STUFF */
+
+
+/* CUBE */
 
 .cube {
 position: absolute;
