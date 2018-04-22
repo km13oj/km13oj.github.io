@@ -422,6 +422,11 @@ header {
     width: 100%;
 }
 
+.carousel-indicators {
+margin-top: 45%;
+    
+}
+
 /****** FOOTER *******/
 
 footer {
