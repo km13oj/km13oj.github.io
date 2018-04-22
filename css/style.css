@@ -423,19 +423,22 @@ header {
 }
 
 .carousel-indicators, .carousel-control {
+    color: #FFFFFF !important;
     vertical-align: bottom !important;  
     margin-top: 45%;
     border: 0px !important;
     background-image:none !important;
     cursor: pointer;
+}
+
+.carousel-indicator, .carousel-control .glyphicon {
+    color: #FFFFFF !important;
     padding: 8px !important;
     background-color: #606060 !important;
     opacity: 1 !important;
-}
-
-.carousel-indicator .glyphicon {
-    color: #FFFFFF !important;
-    padding: 8px !important;
+    cursor: pointer;
+    background-image:none;
+    border: 0px;
 }
 
 /****** FOOTER *******/
