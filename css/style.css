@@ -423,7 +423,8 @@ header {
 }
 
 .carousel-indicators, .carousel-control {
-vertical-align: bottom !important;    
+vertical-align: bottom !important;  
+margin-top: 45%;
 }
 
 /****** FOOTER *******/
