@@ -425,6 +425,14 @@ header {
 .carousel-indicators, .carousel-control {
 vertical-align: bottom !important;  
 margin-top: 45%;
+    border: 0px;
+    background-image:none;
+}
+
+.carousel-indicator, .carousel-control .glyphicon {
+    color: #FFFFFF;
+    padding: 4px;
+    background-color: #606060;
 }
 
 /****** FOOTER *******/
