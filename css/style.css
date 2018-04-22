@@ -427,10 +427,15 @@ header {
     height: auto;
 }
 
-.carousel-indicators, .carousel-control {
-    color: #FFFFFF !important;
+.carousel-indicators {
+    display: none !important;   
+}
+
+.carousel-control {
+    color: #a7d7ec !important;
+    opacity: 1 !important;
     vertical-align: bottom !important;  
-    margin-top: 45%;
+    margin-top: 50%;
     border: 0px !important;
     background-image:none !important;
     cursor: pointer;
@@ -438,12 +443,12 @@ header {
 
 .carousel-indicator, .carousel-control .glyphicon {
     color: #FFFFFF !important;
-    padding: 8px !important;
     background-color: #606060 !important;
     opacity: 1 !important;
     cursor: pointer;
     background-image:none;
     border: 0px;
+    box-shadow: 
 }
 
 /****** FOOTER *******/
