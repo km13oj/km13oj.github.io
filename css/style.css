@@ -428,14 +428,14 @@ header {
 }
 
 .carousel-indicators {
-    display: none !important;   
+    display: none !important;
+    
 }
-
 .carousel-control {
-    color: #a7d7ec !important;
+    color: #ffffff !important;
     opacity: 1 !important;
     vertical-align: bottom !important;  
-    margin-top: 55%;
+    margin-top: 45%;
     border: 0px !important;
     background-image:none !important;
     cursor: pointer;
