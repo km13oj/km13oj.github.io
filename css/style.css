@@ -112,7 +112,7 @@ h4 {
 .intro {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.4em;
-    line-height: 3em;
+    line-height: 1.25em;
     color: #FFFFFF;
 }
 
@@ -283,7 +283,8 @@ header {
     min-height: 700px;
     padding: 32px;
     margin: 0;
-    background-color: #005F80;
+    background-color: #005F80; 
+	
 }
 
 .hero .title {
