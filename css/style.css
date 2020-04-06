@@ -447,10 +447,13 @@ header {
 .carousel-indicator, .carousel-control .glyphicon {
     color: #FFFFFF !important;
     font-size: 24px !important;
-    border: 2px #005F80 !important;
     opacity: 1 !important;
     cursor: pointer;
     background-image:none;
+}
+
+.carousel-control .glyphicon:hover {
+    color: #005F80;
 }
 
 /****** FOOTER *******/
