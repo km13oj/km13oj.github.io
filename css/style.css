@@ -79,7 +79,7 @@ a:focus {
 }
 
 a:hover {
-    color: #a7d7ec;
+    color: #005F80;
     transition-duration: .5s;
     text-decoration: none;
 }
@@ -661,7 +661,7 @@ font-family: Poiret One, Veranda, sans-serif;
 
 .cube a:hover {
 	text-decoration: none;
-	color: #a6d2ed;
+	color: #005F80;
 }
 
 .cube a:active {
