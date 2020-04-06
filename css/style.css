@@ -81,7 +81,7 @@ a:focus {
 a:hover {
     color: #ecbca7;
     transition-duration: .5s;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 a:visited {
@@ -453,7 +453,7 @@ header {
     background-image:none;
 }
 
-.carousel-control .glyphicon:hover {
+.glyphicon:hover {
     color: #005F80;
 }
 
