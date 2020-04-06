@@ -107,6 +107,8 @@ h4 {
     font-family: 'Majesti Heavy', Bodoni MT, serif;
     font-size: 7em;
     color: #FFFFFF;
+	line-height: .9em;
+	margin-bottom: 20px;
 }
 
 .intro {
@@ -478,12 +480,12 @@ footer {
 }
 
 .cube-s h1 {
-	font-family:  Megrim, Helvetica, sans-serif;
+	font-family:  Majesti Banner Book, Helvetica, sans-serif;
 	font-size: 1.4em;
 }
 
 .cube-s h2 {
-		font-family:  Megrim, Helvetica, sans-serif;
+		font-family:  Majesti Banner Book, Helvetica, sans-serif;
 	font-size: 1em;
 }
 
