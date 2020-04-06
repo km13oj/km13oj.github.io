@@ -440,7 +440,6 @@ header {
     opacity: 1 !important;
     vertical-align: bottom !important;  
     margin-top: 40%;
-    border: 0px !important;
     background-image:none !important;
     cursor: pointer;
 }
@@ -448,12 +447,10 @@ header {
 .carousel-indicator, .carousel-control .glyphicon {
     color: #FFFFFF !important;
     font-size: 24px !important;
-    background-color: #606060 !important;
+    border: 2px #005F80 !important;
     opacity: 1 !important;
     cursor: pointer;
     background-image:none;
-    border: 0px;
-    box-shadow: 
 }
 
 /****** FOOTER *******/
