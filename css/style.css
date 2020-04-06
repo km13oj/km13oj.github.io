@@ -440,6 +440,7 @@ header {
     opacity: 1 !important;
     vertical-align: bottom !important;  
     margin-top: 40%;
+    width: 0% !important;
     background-image:none !important;
     cursor: pointer;
 }
