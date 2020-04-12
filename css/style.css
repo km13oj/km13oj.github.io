@@ -759,76 +759,92 @@ left: 0px;
 /* CUBE BACKGROUNDS */
 
 #topface1 {
-	background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble1-light.jpg);
+	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble1-light.jpg);*/
+	background-color: #007399;
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
 
 #leftface1 {
-	background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble1-left.jpg);
+	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble1-left.jpg);*/
+	background-color: #005F80;
+	box-shadow: 16px 2px 20px #00394D;
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
 
 #rightface1 {
-	background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble1-right.jpg);
+	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble1-right.jpg);*/
+	background-color: #00394D;
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
 
 /*BACKGROUNDS CUBE 2*/
 #topface2 {
-	background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble2-top.jpg);
+	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble2-top.jpg);*/
+	background-color: #007399;
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
 
 #leftface2 {
-	background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble2-left.jpg);
+	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble2-left.jpg);*/
+	background-color: #005F80;
+	box-shadow: 16px 2px 20px #00394D;
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
 
 #rightface2 {
-	background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble2-right.jpg);
+	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble2-right.jpg);*/
+	background-color: #00394D;
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
 
 /*BACKGROUNDS CUBE 3*/
 #topface3 {
-	background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble3-top.jpg);
+	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble3-top.jpg);*/
+	background-color: #007399;
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
 
 #leftface3 {
-	background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble3-left.jpg);
+	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble3-left.jpg);*/
+	background-color: #005F80;
+	box-shadow: 16px 2px 20px #00394D;
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
 
 #rightface3 {
-	background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble3-right.jpg);
+	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble3-right.jpg);*/
+	background-color: #00394D;
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
 
 /*BACKGROUNDS CUBE 4*/
 #topface4 {
-	background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble4-top.jpg);
+	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble4-top.jpg);*/
+	background-color: #007399;
 	background-repeat: no-repeat;
 	background-size: 200%;
 }
 
 #leftface4 {
-	background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble4-left.jpg);
+	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble4-left.jpg);*/
+	background-color: #005F80;
+	box-shadow: 16px 2px 20px #00394D;
 	background-repeat: no-repeat;
 	background-size: 200%;
 }
 
 #rightface4 {
-	background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble4-right.jpg);
+	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble4-right.jpg);*/
+	background-color: #00394D;
 	background-repeat: no-repeat;
 	background-size: 200%;
 }
