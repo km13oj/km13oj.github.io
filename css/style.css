@@ -782,7 +782,7 @@ left: 0px;
 #leftface1 {
 	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble1-left.jpg);*/
 	background-color: #005F80;
-	box-shadow: 16px 2px 20px rgb(0,57,77,.8);
+	box-shadow: 16px 2px 20px rgb(0,57,77,.4);
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
@@ -790,7 +790,7 @@ left: 0px;
 #rightface1 {
 	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble1-right.jpg);*/
 	background-color: #00394D;
-	box-shadow: 6px 8px 20px rgb(0,57,77,.9);
+	box-shadow: 6px 8px 20px rgb(0,57,77,.7);
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
@@ -806,7 +806,7 @@ left: 0px;
 #leftface2 {
 	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble2-left.jpg);*/
 	background-color: #005F80;
-	box-shadow: 16px 2px 20px rgb(0,57,77,.8);
+	box-shadow: 16px 2px 20px rgb(0,57,77,.4);
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
@@ -814,7 +814,7 @@ left: 0px;
 #rightface2 {
 	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble2-right.jpg);*/
 	background-color: #00394D;
-	box-shadow: 6px 8px 20px rgb(0,57,77,.9);
+	box-shadow: 6px 8px 20px rgb(0,57,77,.7);
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
@@ -830,7 +830,7 @@ left: 0px;
 #leftface3 {
 	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble3-left.jpg);*/
 	background-color: #005F80;
-	box-shadow: 16px 2px 20px rgb(0,57,77,.8);
+	box-shadow: 16px 2px 20px rgb(0,57,77,.4);
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
@@ -838,7 +838,7 @@ left: 0px;
 #rightface3 {
 	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble3-right.jpg);*/
 	background-color: #00394D;
-	box-shadow: 6px 8px 20px rgb(0,57,77,.9);
+	box-shadow: 6px 8px 20px rgb(0,57,77,.7);
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
@@ -854,7 +854,7 @@ left: 0px;
 #leftface4 {
 	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble4-left.jpg);*/
 	background-color: #005F80;
-	box-shadow: 16px 2px 20px rgb(0,57,77,.8);
+	box-shadow: 16px 2px 20px rgb(0,57,77,.4);
 	background-repeat: no-repeat;
 	background-size: 200%;
 }
@@ -862,7 +862,7 @@ left: 0px;
 #rightface4 {
 	/*background-image: url(http://www.murmuro.us/images/katiemeyer_cube_marble4-right.jpg);*/
 	background-color: #00394D;
-	box-shadow: 6px 8px 20px rgb(0,57,77,.9);
+	box-shadow: 6px 8px 20px rgb(0,57,77,.7);
 	background-repeat: no-repeat;
 	background-size: 200%;
 }
