@@ -6,7 +6,8 @@ Stylesheet by Katie Meyer
 /*** Sub ***/
 
 /*PALETTE
-Blue: a7d7ec
+Old light blue: a7d7ec
+New deep blue: #005F80
 Grey: e1e1e1
 Dark Grey: 606060
 Contrast Yellow: fefb19
@@ -321,9 +322,13 @@ header {
     height: 100%;
     padding: 32px;
     margin: 0;
-    background-image: url(../images/kmeyer_portfolio_marbled.jpg);
+   /* background-image: url(../images/kmeyer_portfolio_marbled.jpg);
     background-size: 100%;
-    background-repeat: repeat-y;
+    background-repeat: repeat-y; */
+	border-radius: 0px;
+	background: #005F80;
+	box-shadow: inset 13px 13px 34px #005471, 
+            inset -13px -13px 34px #006a8f;
     border: 0;
 }
 
