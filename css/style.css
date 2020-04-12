@@ -344,7 +344,10 @@ header {
     padding: 24px;
     margin-bottom: 48px;
     width: 100%;
-    background-color: #FFFFFF;
+	border-radius: 0px;
+	background: #ffffff;
+	box-shadow:  11px 11px 26px #e8e8e8, 
+             -11px -11px 26px #ffffff;
 }
 
 .position {
