@@ -118,6 +118,10 @@ h4 {
     color: #FFFFFF;
 }
 
+.menu a {
+	color: #FFFFFF !important;
+}
+
 h3 {
     font-family: 'Majesti Heavy', Bodoni MT, serif;
     font-size: 4em;
