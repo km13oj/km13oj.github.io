@@ -67,7 +67,6 @@ body {
 }
 
 a,
-a:hover,
 a:active,
 a:focus {
     color: inherit;
@@ -75,15 +74,21 @@ a:focus {
     outline: none;
     border-bottom-width: 4px;
     border-bottom-color: #FFFFFF;
-    padding-bottom: -2px;
     transition-duration: .3s;
+    transition-timing-function: ease-in;
     cursor: pointer;
+}
+
+.menu a {
+    padding-bottom: 2px;	
 }
 
 a:hover {
     text-decoration: underline;
 	text-decoration-color: #fefb19;
-	text-decoration-style: solid; /*Still looking for an opportunity to use wavy*/
+	text-decoration-style: solid 2px; /*Still looking for an opportunity to use wavy.*/
+	transition-duration: .3s;
+	transition-timing-function: ease-in;
 }
 
 a:visited {
