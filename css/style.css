@@ -349,7 +349,9 @@ header {
     width: 100%;
 	border-radius: 0px;
 	background: #ffffff;
-	box-shadow: none;
+	box-shadow:  11px 11px 26px #006a8f, 
+             -11px -11px 26px #005F80;
+
 }
 
 .position {
