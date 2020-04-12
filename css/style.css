@@ -57,8 +57,9 @@ html, body, div, span, applet, object, iframe,
 			font-size: 100%;
 			font: inherit;
 			vertical-align: baseline;
-            line-height: 1.1em;
-            letter-spacing: .05em;
+            		line-height: 1.1em;
+            		letter-spacing: .05em;
+			transition-duration: .1s;
 		}
 
 body {
@@ -80,9 +81,9 @@ a:focus {
 }
 
 a:hover {
-    color: #ecbca7;
-    transition-duration: .5s;
-    text-decoration: none; 
+    text-decoration: underline;
+	text-decoration-color: #fefb19;
+	text-decoration-style: solid; /*Still looking for an opportunity to use wavy*/
 }
 
 a:visited {
