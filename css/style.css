@@ -408,7 +408,7 @@ background-color: none !important;
 }
 
 .client-img {
-	width: 100%;
+	width: clamp(100px, 150px, 200px);
 	padding-right: 24px;
 }
 
