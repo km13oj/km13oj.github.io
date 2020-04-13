@@ -396,6 +396,22 @@ header {
     
 }
 
+/***** CLIENTS ******/
+
+.clients {
+color: #FFFFFF !important;
+background-color: none !important;
+}
+
+.client {
+	margin: 0;
+}
+
+.client-img {
+	width: 100%;
+	padding-right: 24px;
+}
+
 /***** PROCESS ******/
 
 .process {
@@ -410,7 +426,6 @@ header {
     padding-left: 0;
     padding-right: 24px;
 }
-
 
 
 .step.blank {/*I know. I know.*/
