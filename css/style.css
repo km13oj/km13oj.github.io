@@ -398,13 +398,21 @@ header {
 
 /***** CLIENTS ******/
 
-.clients {
-color: #FFFFFF !important;
-background-color: none !important;
+.pro {
+margin-bottom: 0px !important;
 }
 
-.client {
-	margin: 0;
+.clients {
+margin-bottom: 0px !important;
+
+.clients {
+color: #FFFFFF !important;
+background-color: inherit !important;
+}
+
+.clients h3 {
+line-height: 1em !important;
+margin-top: -10px !important;
 }
 
 .client-img {
