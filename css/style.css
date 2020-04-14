@@ -322,6 +322,7 @@ header {
 .proof {
     font-family: 'Majesti Heavy', Gill Sans, serif;
     font-weight: 800;
+	font-style: bold;
     font-size: 1.4em;
     color: #005F80;
 }
@@ -556,38 +557,44 @@ footer {
 .cube-s h2 {
 	font-family: 'Majesti Light Italic', Helvetica, sans-serif;
 	font-size: 1em;
-	padding-top: 4px;
+	padding-top: 8px;
 }
 
 
 .cube-twos h1 {
 	font-family: 'Majesti Light Italic', Helvetica, sans-serif;
 	font-size: 1.4em;
+	padding-top: 8px;
 }
 
 .cube-twos h2 {
 		font-family: 'Majesti Light Italic', Helvetica, sans-serif;
 	font-size: 1em;
+	padding-top: 8px;
 }
 
 .cube-threes h1 {
 	font-family: 'Majesti Light Italic', Helvetica, sans-serif;
 	font-size:1.42em;
+	padding-top: 8px;
 }
 
 .cube-threes h2 {
 		font-family: 'Majesti Light Italic', Helvetica, sans-serif;
 	font-size: 1em;
+	padding-top: 8px;
 }
 
 .cube-fours h1 {
 	font-family: 'Majesti Light Italic', Helvetica, sans-serif;
 	font-size: 1.4em;
+	padding-top: 8px;
 }
 
 .cube-fours h2 {
 		font-family: 'Majesti Light Italic', Helvetica, sans-serif;
 	font-size: 1em;
+	padding-top: 8px;
 }
 
 
