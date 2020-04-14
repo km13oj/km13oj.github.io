@@ -26,6 +26,9 @@ P + general - open sans
 */
 
 /* STRUCTURE
+L - 32px
+M - 24px
+S - 16px
 padding left, padding bottom
 Main frame: 32px;
 Item: 16px, 24px
@@ -519,12 +522,11 @@ margin-top: -10px !important;
 /****** FOOTER *******/
 
 footer {
-	min-height: 200px;
+	min-height: 220px;
 	padding-top: 32px;
 	padding-left: 32px;
 	padding-right: 32px;
 	padding-bottom: 64px;
-   	margin-top: 32px;
 	
 	color: #ffffff;
 	background: #005F80;
@@ -543,18 +545,22 @@ footer {
     width: auto;
     margin: auto;
     min-height: 500px;
+	margin-top: 110px;
 }
 
 .cube-s h1 {
 	font-family: 'Majesti Light Italic', Helvetica, sans-serif;
 	font-size: 1.4em;
+	padding-top: 8px;
 }
 
 .cube-s h2 {
-		font-family: 'Majesti Light Italic', Helvetica, sans-serif;
+	font-family: 'Majesti Light Italic', Helvetica, sans-serif;
 	font-size: 1em;
+	padding-top: 4px;
 }
 
+/*
 .cube-twos h1 {
 	font-family: 'Majesti Light Italic', Helvetica, sans-serif;
 	font-size: 1.4em;
@@ -584,6 +590,7 @@ footer {
 		font-family: 'Majesti Light Italic', Helvetica, sans-serif;
 	font-size: 1em;
 }
+*/
 
 .cube-s {
 position: absolute;
