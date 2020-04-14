@@ -445,6 +445,7 @@ margin-bottom: 0px !important;
 .clients {
 color: #FFFFFF !important;
 background-color: inherit !important;
+	margin-bottom: 33px;
 }
 
 .clients h3 {
