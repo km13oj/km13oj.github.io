@@ -323,12 +323,11 @@ header {
     font-family: 'Majesti Heavy', Gill Sans, serif;
     font-weight: 800;
     font-size: 1.4em;
-    color: #e1e1e1;
+    color: #005F80;
 }
 
 .proof:hover {
     color: #a7d7ec;
-    transition-duration: .5s;
 }
 
 
