@@ -359,7 +359,7 @@ header {
 
 .main {
     padding: 24px;
-    margin-bottom: 33px;
+   /* margin-bottom: 33px;*/
     width: 100%;
 	border-radius: 0px;
 	background: #ffffff;
