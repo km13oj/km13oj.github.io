@@ -336,13 +336,16 @@ header {
 .arrowup {
     	position: relative;
 	width: 0;
-   	 height: 0;
-   	 border-left: 16px solid transparent;
-   	 border-right: 16px solid transparent;
-   	 border-bottom: 20px solid #005F80;
+    	height: 0;
+    	border-left: 30px solid transparent;
+   	 border-right: 30px solid transparent;
+   	 border-bottom: 30px solid #006a8f;
    	 float: right;
-   	 margin-bottom: 0px !important;
-   	 padding-bottom: 0px !important;
+  	  margin-top: -4px !important;
+  	  padding-bottom: 0px !important;
+	cursor: pointer;
+	box-shadow: inset 4px 4px 9px #00506c, 
+            inset -4px -4px 9px #006e94;
 	cursor: pointer;
 }
 
