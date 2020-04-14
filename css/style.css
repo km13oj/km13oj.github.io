@@ -5,12 +5,14 @@ Stylesheet by Katie Meyer
 /***** HEADING ******/
 /*** Sub ***/
 
+/* Normally I'd use design tokens, but for now, I have these: */
+
 /*PALETTE
-Old light blue: a7d7ec
+Old light blue: #a7d7ec
 New deep blue: #005F80
-Grey: e1e1e1
-Dark Grey: 606060
-Contrast Yellow: fefb19
+Grey: #e1e1e1
+Dark Grey: #606060
+Contrast Yellow: #fefb19
 Pink Red: #ecbca7 OR #e39c7d
 */
 
