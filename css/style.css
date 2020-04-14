@@ -317,13 +317,14 @@ header {
     font-weight: 800;
     font-size: 1.4em;
     color: #e1e1e1;
-    transition-duration: .3s;
 }
 
 .proof:hover {
     color: #a7d7ec;
     transition-duration: .5s;
 }
+
+
 /***** CV ******/
 
 .wrapper {
@@ -516,7 +517,12 @@ footer {
 	padding-left: 32px;
 	padding-right: 32px;
 	padding-bottom: 64px;
-    margin-top: 32px;
+   	margin-top: 32px;
+	
+	color: #ffffff;
+	background: #005F80;
+	box-shadow:  8px 8px 21px #005877, 
+             -8px -8px 21px #006689;
 }
 
 .name {
