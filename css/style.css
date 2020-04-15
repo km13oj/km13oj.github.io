@@ -13,6 +13,7 @@ New deep blue: #005F80
 Grey: #e1e1e1
 Dark Grey: #606060
 Contrast Yellow: #fefb19
+	Trying hipster brown 8041008
 Pink Red: #ecbca7 OR #e39c7d
 */
 
@@ -90,7 +91,7 @@ a:focus {
 
 a:hover {
     text-decoration: underline;
-	text-decoration-color: #fefb19;
+	text-decoration-color: #804100;
 	text-decoration-style: solid 2px; /*Still looking for an opportunity to use wavy.*/
 	transition-duration: .3s;
 	transition-timing-function: ease-in;
@@ -423,7 +424,7 @@ header {
 .position .col-md-6,
 .process .step {
     padding-right: 24px;
-    border-right: solid 4px #fefb19;   
+    border-right: solid 4px #804100;   
 }
 
 .position img {
@@ -461,7 +462,7 @@ margin-top: -10px !important;
 /***** PROCESS ******/
 
 .process {
-    border-bottom: solid 4px #fefb19; 
+    border-bottom: solid 4px #804100; 
     padding-bottom: 8px;
 }
 
