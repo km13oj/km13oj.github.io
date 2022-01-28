@@ -94,12 +94,29 @@ a:hover {
     text-decoration: underline;
 	text-decoration-color: #fefb19;
 	text-decoration-style: solid 2px; /*Still looking for an opportunity to use wavy.*/
-	transition-duration: .3s;
+	transition-duration: .1s;
 	transition-timing-function: ease-in;
 }
 
+footer a:hover {
+color: #fefb19 !important;
+}
+
+clients a:hover {
+color: #fefb19 !important;
+}
+
+
 a:visited {
     color: #ecbca7;
+}
+
+footer a:visited {
+color: #fefb19 !important;
+}
+
+clients a:visited {
+color: #fefb19 !important;
 }
 
 ol {
@@ -119,6 +136,10 @@ h4 {
 
 .menu h2 {
 line-height: 1em !important;	
+}
+
+.explainer h3 {
+	line-height: 1em !important;
 }
 
 .greeting {
