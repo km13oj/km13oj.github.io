@@ -1,7 +1,7 @@
 # km13oj Portfolio Site
 
-## Welcome to my standin portfolio website. This repo is where I'm building a new portfolio.
-## You're obviously lost, but surprisingly curious. If you have any questions about my code, or want to yell at me for using too much marbled paper, please reach out at kmeyerto@gmail.com.
+## Welcome to my standin portfolio website. This repo is where I built my first portfolio site. 
+## If you have any questions or comments about my code, please reach out at kmeyerto@gmail.com.
 
 # Prerequisites
 
@@ -9,5 +9,4 @@
 
 # Built With
 
-## HTML, CSS, Bootstrap, and some JavaScript forthcoming. The weird little squares are all CSS. 
-## I made marbled paper and photographed it at home for the background image. 
+## HTML, CSS, Bootstrap, and some JavaScript forthcoming. The weird little squares are all CSS. I believe in SCSS and tokens for component library efficiency, and am implementing more CSS tokens for this site soon. 
