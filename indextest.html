@@ -1,0 +1,1025 @@
+<!doctype html>
+<html>
+<head>
+<!--Site by Katie Meyer
+	Created	fall 2016
+	Updated fall 2021
+Thank you for taking the time to look at my code. If you notice any errors, please email me at kmeyerto@gmail.com. I'd love to hear from you.
+-->
+	
+<meta charset="UTF-8">
+<title>K Meyer | User Experience Designer</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="description" content="Katie Meyer is an experienced senior UX designer and user researcher.">
+<meta name="keywords" content="senior user experience designer, user experience designer, ux designer">
+<meta name="release-version" content="0_0_2">
+<link rel="canonical" href="https://km13oj.github.io">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<!--BOOTSTRAP CSS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css.map">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--CSS-->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!--TYPE-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+
+<!--JS CARNIVAL-->
+    <script>
+    var value = $.cookie('the_cookie'),
+    isNewSession = $.cookie('is_new_session') != 'false',
+    date = null;
+
+if (isNewSession) {
+    // set cookie for next visit during this session
+    debug("new session!");
+    $.cookie('is_new_session', 'false', { path:'/' });
+}
+
+debug("cookie value = " + value);
+
+if (value == "never again") {
+    
+    // nothing to do
+    
+} else if (/^\d+$/.test(value || "")) {
+
+    date = new Date();
+    date.setTime(value);
+
+    debug("date from cookie = " + date);
+
+    var today = new Date();
+
+    if (date.getDate() != today.getDate() ||
+        date.getMonth() != today.getMonth() ||
+        date.getYear() != today.getYear()) {
+
+        // date is other than today
+        $('#landingBack').delay(1000).slideDown(400);
+        $("#close").click(function(e) {
+            $("#landingBack").slideToggle(400);
+
+            // if you want the message to be displayed never again,
+            // move setting the cookie outside this click handler
+            $.cookie('the_cookie', 'never again', { expires: 365, path: '/' }); // expires in 365 days
+        });
+    } else {
+        debug("same date");
+    }
+
+
+} else if ((value || "") == "") {
+
+    $.cookie('the_cookie', new Date().getTime(), { expires: 365, path: '/' }); // expires in 365 days
+    debug("date empty, setting to = " + new Date().getTime());
+}
+
+
+function debug(msg) {
+    $("#debug").append($("<div />").html(msg));
+}
+    </script>
+</head>
+
+	
+<body>
+
+<header class="col-md-12">
+	<div class="col-md-4 name">Katie Meyer</div>
+	<div class="col-md-4"></div>
+	<nav class="col-md-4">
+		<div class="col-md-6">Writing</div>
+		<div class="col-md-6">Design</div></nav>
+</header>
+
+<div class="container-fluid hero" id="top">
+	<div class="col-xs-12 col-md-6 title" id="landingFirst">
+	<div class="greeting">Nice to meet you. </div>
+    	<div class="intro">I'm Katie Meyer, Design Lead for the United Nations Office for Disaster Risk Reduction (UNDRR). <span class="sub">I design meaningful paths through complex information, translating real user problems into high-level solutions.</span></div>
+</div>
+
+<div class="col-md-6 title" id="landingBack">
+<h1>Good to see you again. 
+<span class="title-sub">I'm still a writer and UX designer.</span>
+</h1>
+</div>
+
+<div class="col-md-12 title" id="landingReturn">
+<h1>We can't keep running into each other like this.
+<span class="title-sub">If you want to keep the conversation going, please email me at kmeyerto@gmail.com. </span>
+</h1>
+</div>
+
+<div class="col-xs-8 col-md-6">
+<div class="col-xs-hidden col-md-4"></div>
+<div class="col-xs-12 col-md-8 menu">
+<div class="cube-s">
+        <div class="topFaces" id="topface4">  
+                <div>
+                   
+                </div>
+        </div>
+        <div class="leftFaces" id="leftface4">
+       
+        </div>
+        <div class="rightFaces" id="rightface4">
+                <h2><a href="index.html#markerClients" alt="Current Clients" title="Portfolio">Recent Highlights</a></h2>
+        </div>
+</div>
+
+<div class="cube-twos"> <!-- WEB DESIGN -->
+        <div class="topFaces" id="topface1">
+                <div>
+                </div>
+        </div>
+        <div class="leftFaces" id="leftface1">
+                 <h2><a href="index.html#markerProcess" alt="Contact" title="Contact">Process, News Archive</a></h2>
+                  
+        </div>
+        <div class="rightFaces" id="rightface1">
+               <h2><a href="index.html#markerProcess2" alt="Contact" title="Contact">Process, Startup Redesign</a></h2>
+        </div>
+</div>
+
+<div class="cube-threes">
+        <div class="topFaces" id="topface2">
+                <div>
+                  
+                </div>
+        </div>
+        <div class="leftFaces" id="leftface2">
+             <h2><a href="index.html#markerCV" alt="CV" title="CV">CV</a></h2>              
+          
+        </div>
+        <div class="rightFaces" id="rightface2">
+      
+        </div>
+</div>
+
+<!--<div class="cube-fours"> 
+        <div class="topFaces" id="topface3">
+                <div>
+               
+                </div>
+        </div>
+        <div class="leftFaces" id="leftface3">
+          
+           
+                                  </div>
+        <div class="rightFaces" id="rightface3">
+              
+        </div>
+</div>-->
+</div>
+
+<!--
+<div class="col-md-2"></div>
+<div class="col-md-2 explore">Writing</div>
+<div class="col-md-2 explore">Design</div>
+<div class="col-md-2 explore">CV</div>
+<div class="col-md-2 explore">Contact</div>
+-->
+</div>
+</div><!--end hero-->
+
+<div class="container-fluid wrapper">
+<div class="container-fluid main" id="markerCV">
+<div class="col-xs-12 col-md-4 explainer">
+<h3>CV</h3>
+<p>With experience in health care, finance, and media, I've developed a research-based, iterative design practice informed by lean startup methodologies.</p>
+</div>
+
+	
+	<div class="col-xs-12 col-md-8 positions">
+	<div class="col-md-12 position">
+<div class="col-md-12">
+<h4>UNDRR</h4>
+<h5>Design Lead | April 2021 to present</h5>
+<p>Supports the digitization of disaster risk reduction programs, with a focus on process improvements to support the UNDRR's strategic framework and the UN data strategy</p>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Research and Design</div>
+<ul>
+<li>Collaborate with diverse teams to plan and execute research-based design processes</li>
+<li>Lead teams in pinpointing their success criteria, target user groups, and key use cases for new projects</li>
+<li>Conduct stakeholder interviews and usability testing to deliver effective experiences for end-users</li>
+<li>Create and present designs, from initial information architecture to final high fidelity mockups</li>
+<li>Wrote detailed documentation for developers, including content matrices and design system guidelines</li>
+<li>Thoroughly bug tested new releases, working with developers to bring the final product up to the design specs</li>
+<li>Designed the new websites for <a href="http://mcr2030.undrr.org" target="_blank">Making Cities Resilient 2030</a>, the <a href="http://mcr2030dashboard.undrr.org" target="_blank">MCR2030 dashboard</a>, <a href="https://www.ariseglobalnetwork.org" target="_blank">ARISE</a>, and the new GRAF NRIH Esri portal (in progress)</li>
+<li>Worked with a team to design and implement components that stream live data from the MCR2030 Dashboard to the public website, reducing the MCR team's workload in keeping the website updated </li>
+
+	</ul>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Management</div>
+<ul>
+<li>Evolved the team's approach to contracts and project plans by focusing on solving real problems for end users, and incorporating usability testing and trackable metrics</li>
+<li>Leading efforts toward greater interoperability by building integrations into each new project, spearheading the OpenMCR initiative by providing open-source widgets and an API to the public</li>
+<li>Manage consultants, vendors, and internal clients across time zones, working through challenges to deliver projects on time</li>
+<li>Built  feedback loop for continual improvement with surveys for bug reporting, user feedback, stakeholder feedback on the design process, and developer feedback with a goal of enhancing both user outcomes and the organization's design maturity as a whole</li>
+<li>Streamlined design process and delivery by building a repository of templates to be used in the design process, and centralizing design work in a developer-friendly archive</li> 
+<li>Improved stakeholder engagement in the design process by standardizing the copy gathering process, introducing design workshops, and boosting transparency with more regular updates</li>
+<li>Increased the number of developer checkpoints in the process to streamline product builds, gathering more feedback from developers earlier</li>
+<li>Built a bug reporting template to speed the QA process, and oversaw the QA process for new websites</li>
+<li>Oversaw the design and development of the new <a href="http://recovery.preventionweb.net" target="_blank">International Recovery Platform</a> and <a href="http://globalplatform.undrr.org" target="_blank">Global Platform 2022</a> websites, as well as the <a href="" target="_blank">Scorecard</a></li>
+</ul>
+</div>
+	</div>
+		
+		
+
+	<div class="col-md-12 position">
+<div class="col-md-12">
+<h4>Capco</h4>
+<h5>Senior User Experience Consultant | June 2018 to December 2021</h5>
+<p>Collaborates with diverse teams at incumbent institutions on experiences that can compete with challenger banks and insurers</p>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Research</div>
+<ul>
+
+<li>Organize research processes in the inception phase of new projects</li>
+<li>Implemented KPIs and measuring to track product releases </li>
+<li>Plug internal user data and competitor research into design processes</li>
+<li>Lead design workshops and progress meetings with stakeholders, aligning the whole team to user needs</li>
+	<li>Embedded research in every phase of development and release in agile product cycles</li>
+<li>Through competitive analysis and UX research, identify the intersection of business needs, customer needs, and technical opportunities</li>
+</ul>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Design</div>
+<ul>
+<li>Design and iterated agile processes to foster innovation and shorter, more frequent releases</li>
+<li>Create strategies and develop product roadmaps to reach different target markets</li>
+<li>Work with a diverse set of stakeholders to design flexible, scalable web and mobile experiences that deliver on KPIs while reducing build times</li>
+<li>Develop compelling design artifacts (wireframes, conceptual diagrams, flows, interactive prototypes) that propose ideal and minimum viable solutions to foster strategic alignment</li> 
+<li>Mentor junior designers and oversee delivery of design assets</li>
+<li>Develop and implemented rubrics for UI testing that reduced QA and BA workload</li>
+
+</ul>
+</div>
+	</div>
+<div class="col-md-12 position">
+<div class="col-md-12">
+<h4>The Globe and Mail</h4>
+<h5>User Experience Designer | January 2017 to June 2018</h5>
+<p>Lead designer on News Photo Archive</p>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Research</div>
+<ul>
+<li>Built new knowledge sharing processes across the organization, breaking down silos and allowing teams to learn from each other's wins</li>
+<li>Integrated data science, including AI tools, into other teams to automate processes and improve the user experience</li>
+<li>Expanded discovery phase in product lifecycle, conducting a year-long research project on the needs and habits of millennial readers</li>
+<li>Deployed rapid prototyping techniques to A/B test new ideas generated during discovery, usability testing, to drive KPIs</li>
+<li>Tracked progress of new designs in Omniture and internal analytics tools, trained team on tools</li>
+<li>Managed weekly reader interview sessions for problem discovery and usability testing</li>
+</ul>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Design</div>
+<ul>
+<li>Designed and launched News Photo Archive, a subscribers-only showcase of more than 10,000 archived photos, photo backs, and captions; surpassed page view per visitor and engagement goals</li>
+<li>Collaborated with an interdisciplinary team of designers on end-to-end implementation of qualitative and quantitative user research</li>
+<li>Developed and tested two new product lines, working with stakeholders from across the organization</li>
+<li>Helped spearhead personalization initiative, working closely with data science team</li>
+<li>Redesigned My Watchlist and My Portfolio features, north star and MVP versions</li>
+<li>Won internal innovation competition twice</li>
+</ul>
+</div>
+    
+    
+<div><!------------photo archive carousel------------->
+<div class="container col-xs-12 col-md-12 col-md-12"> 
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./images/kmeyer_portfolio_archive-research.png" alt="User research snapshot" >
+          <p>User research for photo archive collections</p>
+      </div>
+
+      <div class="item">
+        <img src="./images/kmeyer_portfolio_archive-journey.png" alt="User journey snapshot" >
+          <p>User journey draft for photo archive</p>
+      </div>
+         
+         <div class="item">
+        <img src="./images/kmeyer_portfolio_archive-timeline.png" alt="Screencap of photo archive timeline eature">
+            <p>Photo archive timeline feature</p>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Soft Launch</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div><!--end carousel-->
+</div><!--end position 0-->
+    
+<div class="col-md-12 position">
+<div class="col-md-12">
+<h4>Crowdbabble</h4>
+<h5>Senior User Experience Designer | September 2015 to January 2017</h5>
+<p>Lead designer, responsible for user experience across products</p>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Research</div>
+<ul>
+<li>Implemented new analytics tools, studied funnel, and used findings to double conversion rate from anonymous visitor to trial sign up; created regular research process to pinpoint user stumbling blocks and clear them with the whole team</li>
+<li>After studying user interests, created new Crowdbabble content strategy; increased blog traffic from 12,209 in 2013-14 to 188,365 (Medium) and 43,984 (blog) in 2015-16; 19x increase <span class="proof"><a href="http://www.medium.com/@crowdbabble" alt="Link will open in new tab" target="_blank">></a></span></li>
+ <ul>
+    <li><a href="https://medium.com/the-social-reader/in-the-final-hours-of-the-election-who-is-winning-on-social-media-7243016e3d7b" target="_blank" alt="Trump prediction will open in a new tab">Predicting Trump's Win  <span class="proof">></span></a>
+       </li>
+    <li><a href="https://medium.com/the-social-reader/what-happens-when-the-front-page-of-the-internet-hates-you-axe-steals-reddit-content-and-finds-out-67c6680d563b#.sbjnjghjo" target="_blank" alt="When Reddit Turns On You will open in a new tab">When Reddit Turns on You  <span class="proof">></span></a></li>
+    <li><a href="https://medium.com/the-social-reader/diy-politics-on-the-social-network-for-conservatives-d1c131d4de59#.vz6op95lu" target="_blank" alt="Pinterest article will open in a new tab">Pinterest Culture Wars  <span class="proof">></span></a></li>
+    </ul>
+<li>Tested and learned from copy changes to boost conversion using Optimizely</li>
+<li>Refined SEO and marketing strategy, ranking on first page of Google for critical keywords like "trump clinton social media"</li>
+<li>Designed new brand identity based on user demographics and interests uncovered through research, including verbal design overhaul</li>
+</ul>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Design</div>
+<ul>
+<li>Redesigned main Crowdbabble web app based on in-depth user research, built HTML and CSS <span class="proof"><a href="https://www.crowdbabble.com/blog/2016/10/17/new-perspectives-on-social-for-crowdbabble-customers-3/" alt="Link will open in new tab" target="_blank">></a></span></li>
+<li>Designed UX, UI, and did front end development for hashtag analytics web app, working closely with team of developers <span class="proof"><a href="https://www.crowdbabble.com/blog/2016/02/23/hashtag-analytics-101-find-new-followers/" alt="Link will open in new tab" target="_blank">></a></span></li>
+<li>Designed UX, UI, and did front end development for Hootsuite app for Instagram analytics, collaborating with team of developers throughout <span class="proof"><a href="http://appdirectory.hootsuite.com/250/crowdbabble" alt="Link will open in new tab" target="_blank">></a></span></li>
+<li>Developed style guide and new brand identity for planned overhaul of Crowdbabble front end, all channels</li>
+<li>Launched new onboarding flow and messaging using Intercom to improve customer retention, emphasizing triggers to conversion discovered in research</li>
+<li>Created new user research and competitive analysis processes to serve design work, implementing new analytics tools on the site</li>
+</ul>
+</div>
+    
+    <div><!------------crowdbabble carousel------------->
+<div class="container col-xs-12 col-md-12 col-md-12">
+  <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel2" data-slide-to="1"></li>
+      <li data-target="#myCarousel2" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./images/kmeyer_portfolio_onboarding.png" alt="Redesigned onboarding screencap of three newsletters, getting started, keep exploring, and keep trekking" >
+          <p>Redesigned onboarding</p>
+      </div>
+
+      <div class="item">
+        <img src="./images/kmeyer_portfolio_onboarding-intercom.gif" alt="Building a new onboarding flow animated gif of Intercom tool" >
+          <p>Measuring the success of the redesigned onboarding</p>
+      </div>
+    
+      <div class="item">
+        <img src="./images/kmeyer_portfolio_hootsuite.png" alt="Hootsuite App in computer screen">
+            <p>Hootsuite app</p>
+      </div>
+        
+
+        
+         <div class="item">
+        <img src="./images/kmeyer_portfolio_coding_screencap.gif" alt="Working on Crowdbabble redesign animated gif">
+            <p>Working on Crowdbabble redesign</p>
+      </div>
+        
+        <div class="item">
+        <img src="./images/kmeyer_portfolio_crowdbabble-page.png" alt="Crowdbabble redesign">
+            <p>Crowdbabble redesign</p>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Prototyping</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div><!--end carousel-->
+</div><!--end position 1-->
+    
+<div class="col-md-12 position">
+<div class="col-md-12">
+<h4>OCAD</h4>
+<h5>User Experience Designer, Student, and Researcher | September 2013 to 2015 </h5>
+<p>User experience designer on professor-lead research projects and thesis, which centres on how digital natives read novels</p>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Research</div>
+<ul>
+<li>Won Best Written Thesis for program</li>
+<li>Awarded Social Sciences and Humanities Research Council grant for study on how digital natives read the novel, driven by narrative inquiry and grounded theory methodologies</li>
+<li>Wrote research-based essays in demanding digital theory and human-computer interaction classes</li>
+</ul>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Design</div>
+<ul>
+<li>Studied lean startup, strategic foresighting, and rapid prototyping techniques, implementing them in product development projects (sample working prototype, HUSH, shown in carousel below)</li>
+<li>Designed UX and UI of website for professor-lead research project on Indigenous new media</li>
+<li>Designed and developed working prototype of social annotation web app based on study of digital natives</li>
+<li>In classes and Canadian Film Centre summer program, worked with peers to create user personas, journeys, and prototypes</li>
+</ul>
+</div>
+    
+    
+    <div><!------------OCAD U carousel------------->
+<div class="container col-xs-12 col-md-12 col-md-12"> 
+  <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel3" data-slide-to="1"></li>
+      <li data-target="#myCarousel3" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./images/kmeyer_portfolio_hush-journey.png" alt="User research snapshot" >
+          <p>This is the user journey desigened as part of an OCAD prototype created with Laura Wright. HUSH solves the problem of noisy coworking and study spaces.</p>
+      </div>
+
+      <div class="item">
+        <img src="./images/kmeyer_portfolio_hush-tweet.png" alt="User journey snapshot" >
+          <p>HUSH measures noise levels, and then displays that volume in three different ways. First, it tweets the average volume levels from @VolumeBot2013, so that the volume can be checked remotely.  </p>
+      </div>
+         
+         <div class="item">
+        <img src="./images/kmeyer_portfolio_hush-display.png" alt="Screencap of photo archive timeline eature">
+            <p>Second, HUSH displays the current volume levels in the chosen space. </p>
+      </div>
+        
+          
+         <div class="item">
+        <img src="./images/kmeyer_portfolio_hush-clock.png" alt="Screencap of photo archive timeline eature">
+            <p>The projection data visualization is live, and we coded it using Processing.</p>
+      </div>
+        
+        <div class="item">
+        <img src="./images/kmeyer_portfolio_hush-dv.png" alt="Screencap of photo archive timeline eature">
+            <p>Finally, HUSH displays historic volume trends online, so users can understand historic volume trends and choose a working space accordingly. HUSH connects two different spaces: the chosen space, and wherever the user is. In this case, the Digital Futures Initiative lab was chosen as a test space. A student can check how loud the space is before travelling from home to work there.</p>
+      </div>
+    </div>
+      
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel3" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Soft Launch</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel3" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div><!--end carousel-->
+    
+</div><!--end position 2-->
+    
+<div class="col-md-12 position">
+<div class="col-md-12 header">
+<h4>Bell Media</h4>
+<h5>Online Content Associate | September 2012 to July 2013 </h5>
+<p>Designed layouts for overhaul of sympatico.ca, transition to loop.ca</p>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Writing</div>
+<ul>
+<li>Studied search trends and content analytics to inform assignments</li>
+<li>Introduced new tools and platforms to content team, like Storify <span class="proof"><a href="https://storify.com/kmeyerTO/best-real-time-reactions-to-the-85th-academy-award" alt="Link will open in new tab" target="_blank">></a></span></li>
+<li>Developed (and wrote content for) new themes that incorporated all Bell Media channels</li>
+<li>Wrote evergreen Living pieces and galleries</li>
+</ul>
+</div>
+<div class="col-md-6"><div class="col-md-12 title">Design</div>
+<ul>
+<li>Designed layouts for Living, Travel, and Showbiz sections that integrated multiple products<span class="proof"><a href="https://web.archive.org/web/20130216140758/http://www.theloop.ca/living/" alt="Link will open in new tab" target="_blank">></a></span></li>
+<li>Incorporated feedback submission process for users</li>
+<li>Worked with a team to launch the site under tight deadlines and technical constraints</li>
+</ul>
+</div>
+</div><!--end position 3-->
+    
+<div class="col-md-12 position">
+<div class="col-md-12 header">
+<h4>Sunnybrook Health and Sciences Centre</h4>
+<h5>Web Communications Specialist | May 2011 to May 2012 </h5>
+<p>Responsible for maintaining, updating Sunnybrook Research Institute website and contributing to social media strategy</p>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Research</div>
+<ul>
+<li>Collected business requirements from internal stakeholders and learnings from public relations team; wrote content for Sunnybrook social media channels</li>
+<li>After researching previous initiatives, designed content strategy and social media campaigns for fundraising events, like Raise a Flag</li>
+</ul>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Design</div>
+<ul>
+<li>Brought offline data online for patients, including breast cancer resources</li>
+<li>Interviewed patients, doctors, and reviewed analytics to design better user journeys on the site; focused on wayfinding and navigation through deluge of resources</li>
+<li>Built and launched Sunnybrook International site with CRM, basic CSS <span class="proof"><a href="https://web.archive.org/web/20120927211057/http://sunnybrook.ca/international/" alt="Link will open in new tab" target="_blank">></a></span></li>
+</ul>
+</div>
+</div><!--end position 3-->
+    
+<div class="col-md-12 position">
+<div class="col-md-12 header">
+<h4>Sunnybrook Health and Sciences Centre</h4>
+<h5>Ward Clerk | Part Time June 2005 to May 2011</h5>
+<p>To support overabundance of unpaid internships, worked as a secretary on hectic palliative and intensive care units</p>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Responsibilities</div>
+<ul>
+<li>Nursing payroll and scheduling</li>
+<li>Transportation for patient appointments and events</li>
+<li>All patient charts and files</li>
+<li>Patient admissions, discharges, and transfers </li>
+</ul>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Design</div>
+<ul>
+<li>Interest in organizational efficiency and elegant system design ignited</li>
+</ul>
+</div>
+</div><!--end position 4-->
+    
+<div class="col-md-12 position">
+<div class="col-md-12 header">
+<h4>Random House NY, Sullivan Entertainment, Beetlebox Media</h4>
+<h5>Intern | Summers 2005 to 2011</h5>
+<p>Developed experience in filmmaking and project development</p>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Research</div>
+<ul>
+    <li>Completed background research for feature documentary, Mozart Decoded</li>
+    <li>Analyzed audience trends and past sales to assess slush pile</li>
+</ul>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Project Development</div>
+<ul>
+<li>Analyzed social media trends and industry data to build cases for projects</li>
+<li>Helped manage workflow for early stages of film projects, including grant applications and sourcing raw material</li>
+</ul>
+</div>
+</div><!--end position 5-->
+    
+<div class="col-md-12 position">
+<div class="col-md-12 header">
+<h4>The Saint, The Daily Californian</h4>
+<h5>Reporter and Editor | 2006 to 2010</h5>
+<p>News reporter, arts reporter, and section editor</p>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Research and Reporting</div>
+<ul>
+    <li>Arts reporting: First person accredited to major film festival for both papers, covering Cannes, Sundance, and London Film Festivals <span class="proof"><a href="https://www.youtube.com/watch?v=2sDXAW0ZwEo" alt="Link will open in new tab" target="_blank">></a></span></li>
+    <li>News reporter: 26 front page stories on a variety of beats (crime, the recession, and the election) <span class="proof"><a href="http://archive.dailycal.org/article.php?id=104151" alt="Link will open in new tab" target="_blank">></a></span></li>
+    <li>Won Story of the Week for linking defunding of UC research labs to Obama's plans to reduce nuclear arsenal <span class="proof"><a href="http://archive.dailycal.org/article.php?id=104461" alt="Link will open in new tab" target="_blank">></a></span></li>
+    <li>Stories picked up on Huffington Post and Politico <span class="proof"><a href="http://www.politico.com/story/2008/11/falling-currencies-impact-international-students-015907" alt="Link will open in new tab" target="_blank">></a></span></li>
+    <li>Increased traffic to YouTube channel 4x</li>
+</ul>
+</div>
+<div class="col-xs-12 col-md-6"><div class="col-md-12 title">Design</div>
+<ul>
+<li>Started as a production assistant on student newspaper, editing and finalizing layout</li>
+<li>As section editor, redesigned layouts and style guide to modernize print edition</li>
+<li>Managed production workflow, assigning and editing stories, then designing layouts for print and online<li>
+<li>Managed stable of writers, organized training program, sent 6 to international film festivals</li>
+<li>Launched blog for The Saint when the paper did not have a website <span class="proof"><a href="https://thesaintscreen.wordpress.com/about/" alt="Link will open in new tab" target="_blank">></a></span></li>
+</ul>
+</div>
+</div><!--end position 5-->
+    
+    
+    
+    <div class="col-md-12 position">
+<div class="col-md-12 header">
+    <br/><br/>
+    <p>Download <a href="./images/K-Meyer_User-Experience-Designer.pdf" target="_blank" alt="PDF will open in a new tab">a PDF copy of CV</a>. To get in touch with me, please <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5A3nIqTEx5PCAAvwYfZlC9wbbguvG8SFeuVEud5wOzhI-bA/viewform?usp=sf_link" target="_blank" alt="Google Survey will open in a new tab">share your feedback</a> on this website.</p>
+</div>
+</div><!--end position 5-->
+    
+    
+</div><!---end positions--->
+<div class="col-md-12">
+   <span class="totop"> <a href="index.html#top" alt="Return to the top of the page" title="Return to the top of the page"><div class="arrowup"></div></a></span>
+</div>
+</div><!---end main--->
+</div><!---end wrapper--->
+	
+	
+<div class="container-fluid wrapper">
+<div class="container-fluid main clients" id="markerClients">
+<div class="col-xs-12 col-md-4 explainer">
+<h3>Recent Highlights</h3>
+<p>Working with the UN, first as a consultant and then as Design Lead, has been the highlight of my career. These are the projects I'm most proud of, designed with a team of UNDRR stakeholders.</p>
+</div>
+<div class="col-xs-12 col-md-8 positions">
+<div class="col-xs-12 col-md-12 client" style="padding:24px">
+<ul>
+	<li><h4><a href="https://mcr2030.undrr.org/openmcr" target="_blank" alt="Link will open in a new tab.">Making Cities Resilient 2030, OpenMCR initiative</a></h4></li>
+	<li><h4><a href="https://www.ariseglobalnetwork.org" target="_blank" alt="Link will open in a new tab.">ARISE</a></h4></li>
+	<li><h4><a href="https://mcr2030dashboard.undrr.org" target="_blank" alt="Link will open in a new tab.">MCR2030 Dashboard</a></h4></li>
+	</ul>
+	</div>
+	
+</div><!---end clients--->
+
+</div><!---end main--->
+</div><!---end wrapper--->
+	
+<div class="container-fluid wrapper" id="markerProcess">
+	
+<div class="container-fluid main pro">
+	
+	
+	
+	
+	
+	
+	
+
+<div class="col-xs-12 col-md-4 explainer">
+<h3>Design process for a news archive</h3>
+<p>My design process is flexible, but rigorous, always based in user research and data analysis.</p>
+</div>
+
+<!--begin processes-->
+<div class="col-xs-12 col-md-8 positions">
+
+<!--begin position-->  
+<div class="col-md-12 position">
+<div class="col-md-12">
+<h4>The Globe and Mail News Photo Archive</h4>
+<h5>Research, Design, Launch</h5>
+</div>
+    
+
+
+    
+    
+
+<div class="col-xs-12 col-md-6 step">
+<a href="https://beta.theglobeandmail.com/canada/canada-150/photoarchive/" target="_blank" alt="View this prototype live in a new tab" title="Go to the News Photo Archive"><img src="./images/kmeyer_portfolio_news-photo-archive-page.png" alt="Snapshot of News Photo Archive photo page for each document, with the ability to flip the photo over"></a>
+</div>
+    
+<div class="col-xs-12 col-md-6 step">
+<div class="col-md-12 title">Project Planning</div>
+<ul>
+<li>Discuss project KPIs and align with department heads</li>
+<li>Collect requirements from stakeholders</li>
+<li>Internal research and fact-finding throughout the organization on previous similar projects, internal capacities</li>
+<li>Create timeline and project milestones, including research design for user and industry research</li>
+<li>Work with technical director to set up workflow between marketing, design team, and developers</li>
+</ul>
+</div>
+    
+<div class="col-xs-12 col-md-6 step">
+<div class="col-md-12 title">User Research</div>
+<ul>
+<li>Analyze broad trends and user flows relating to photo content with interal analytics tools</li>
+<li>Identify stumbling blocks, triggers to conversion and increased web sessions</li>
+<li>Pinpoint fallout and exit points with Omniture</li>
+<li>Develop and deploy surveys to subscribers on potential archive focal points</li>
+<li>Isolate target demographics and interview matching subscribers in person about their archive preferences</li>
+</ul>
+</div>
+
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">Internal Research</div>
+<ul>
+<li>Work with photo archive team to audit total archive, document trends and available content</li>
+<li>Audit other large scale archives, from museums and libraries</li>
+<li>Interview photo archivists and historians about their organizational methodologies</li>
+</ul>
+</div>
+    
+<div class="col-xs-12 col-md-6 step blank">
+</div>
+    
+<div class="col-xs-12 col-md-6 step">
+<div class="col-md-12 title">Develop Information Architecture</div>
+<ul>
+<li>Develop four key ways of navigating the vast archive of photos</li>
+<li>Map out user journeys thorugh the site</li>
+<li>Coordinate with development teams in Canada and the US</li>
+<li>Finalize information architecture through iterative process with developers, confirming capabilities</li>
+</ul>
+</div>
+ 
+     
+<div class="col-xs-12 col-md-6 step blank">
+</div>
+     
+<div class="col-xs-12 col-md-6 step blank">
+</div>  
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">Journey Mapping</div>
+<ul>
+<li>Build new user photo archive user journeys</li>
+<li>Begin to wireframe elements, using existing TGAM pattenr library</li>
+<li>Work with newsletter and social teams to build process back to top of funnel</li>
+<li>Begin to produce documentation of functionality required for developers</li>
+</ul>
+</div>
+    
+
+     
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">User Journey Usability Testing</div>
+<ul>
+<li>Orchestrate Facebook polls on potential collection to assess subscriber interest</li>
+<li>Interview subscribers and gather feedback on initial user journeys and wireframes </li>
+<li>Incorporate their feedback, begin to work towards higher fidelity interface designs with team</li>
+<li>Develop soft launch plan, working with customer engagement and social teams</li>
+</ul>
+</div>
+    
+    <div class="col-xs-12 col-md-6 step blank medium">
+</div>
+     
+
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">Wireframes</div>
+<ul>
+<li>Develop interaction patterns and high fidelity mockups in Sketch, mobile first</li>
+<li>Move to Sketch, repeat feedback process, moving toward high fidelity mockups in an iterative process</li>
+<li>Develop analytics requirements, produce metrics required for each element and step in user journey</li>
+<li>Collect accessibility requirements and set up quality assurance standards</li>
+</ul>
+</div>
+
+    
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">Development</div>
+<ul>
+<li>Complete technical requirements documentation</li>
+<li>Deliver final design specs and patterns to development teams at four breakpoints</li>
+<li>Check in with developers weekly, working toward specs</li>
+</ul>
+</div>
+    
+<div class="col-xs-12 col-md-6 step blank big">
+</div>
+    
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">Soft Launch</div>
+<ul>
+<li>Launch first to subscribers only on Facebook, collecting feedback in comments and via analytics</li>
+<li>Refine design and work with developers to execute changes</li>
+<li>Work with photo archivists and editorial to launch initial collections, based on subscriber interests</li>
+<li>Work with developers to connect customer acquisition funnel to archive</li>
+<li>Ensure listed bugs are annihilated</li>
+</ul>
+</div>
+    
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">Hard Launch</div>
+<ul>
+<li>Launch photo archive in print and online</li>
+<li>Build collection schedule, coordinating with social and newsletter teams</li>
+<li>Begin working on new features, including search and commenting</li>
+<li>Track archive performance on internal data analytics tools, continue to tweak design</li>
+<li>Report on KPIs</li>
+</ul>
+</div>
+</div><!--end position 0, TGAM-->
+</div><!--end processes-->
+	<div class="col-md-12">
+   <span class="totop"> <a href="index.html#top" alt="Return to the top of the page" title="Return to the top of the page"><div class="arrowup"></div></a></span>
+</div>
+</div>
+</div>
+
+    
+</div><!---end positions--->
+</div><!---end main--->
+</div><!---end wrapper--->
+
+<div class="container-fluid wrapper" id="markerProcess2">
+	
+<div class="container-fluid main pro">
+
+<div class="col-xs-12 col-md-4 explainer">
+<h3>Design process for a startup redesign</h3>
+<p>At Crowdbabble, I used analytics and data to drive a lean redesign of the platform.</p>
+</div>
+
+<!--begin processes-->
+<div class="col-xs-12 col-md-8 positions">
+	
+<!--begin position-->  
+<div class="col-md-12 position">
+<div class="col-md-12">
+<h4>Crowdbabble Redesign</h4>
+<h5>Research, Design, Development</h5>
+</div>
+    
+    
+
+<div class="col-xs-12 col-md-6 step">
+    <a href="https://www.crowdbabble.com/blog/new-perspectives-searchable-post-archive/" target="_blank" alt="View this prototype live in a new tab" title="Learn more about the Crowdbabble redesign"><img src="./images/kmeyer_portfolio_crowdbabble-page.png" alt="Snapshot of final product"></a>
+</div>
+    
+<div class="col-xs-12 col-md-6 step">
+<div class="col-md-12 title">Research Design</div>
+<ul>
+<li>Create timeline and project milestones for user and industry research</li>
+<li>Create surveys</li>
+<li>Incorporate feedback tracking into site and social</li>
+</ul>
+</div>
+    
+     <div class="col-xs-12 col-md-6 step blank big">
+</div>
+
+    <div class="col-xs-12 col-md-6 step">
+<div class="col-md-12 title">Ongoing Brainstorming</div>
+<ul>
+<li>Pool ideas in central document</li>
+<li>Invite input from team</li>
+</ul>
+    </div>
+    
+    
+<div class="col-xs-12 col-md-6 step">
+<div class="col-md-12 title">User Research</div>
+<ul>
+<li>Analyze broad trends and user flows with Google Analytics and Mixpanel</li>
+<li>Identify stumbling blocks, triggers to conversion and increased web sessions</li>
+<li>Pinpoint fallout and exit points with Adobe Analytics</li>
+<li>Access more granular data with Fullstory, HotJar</li>
+</ul>
+</div>
+
+   
+
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">Competitive Analysis</div>
+<ul>
+<li>Explore analytics tools in other verticals</li>
+<li>Audit APIs of four key social networks, making notes on big data capabilities on the horizon</li>
+<li>Attend conferences and meet with advertising agencies, potential clients to gather their wants and needs</li>
+</ul>
+</div>
+    
+<div class="col-xs-12 col-md-6 step blank">
+</div>
+    
+<div class="col-xs-12 col-md-6 step">
+<div class="col-md-12 title">Persona Building, Journey Mapping</div>
+<ul>
+<li>Using SPICE analysis and demographic data collected, create personas of existing users</li>
+<li>Work with sales and business team to develop personas of desired users</li>
+<li>Map journey as it exists now</li>
+<li>Run personas of desired (fictional) users and use cases through existing map to collect more data </li>
+</ul>
+</div>
+ 
+     
+<div class="col-xs-12 col-md-6 step blank">
+</div>
+     
+<div class="col-xs-12 col-md-6 step blank">
+</div>  
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">Journey Mapping</div>
+<ul>
+<li>Build new user experience journey, sign up to exit</li>
+<li>Incorporate new rewards for steps completed</li>
+<li>Redesign messaging to match new onboarding flow</li>
+<li>Begin to produce documentation of functionality required for developers</li>
+</ul>
+</div>
+    
+
+     
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">Test New User Journey</div>
+<ul>
+<li>Run user personas through proposed new user journeys</li>
+<li>Compare to current user flow</li>
+<li>Incorporate feedback from team</li>
+<li>Compare to competitor user flows</li>
+</ul>
+</div>
+    
+    <div class="col-xs-12 col-md-6 step blank medium">
+</div>
+     
+
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">Wireframes</div>
+<ul>
+<li>Use paper, pencil to sketch out initial UI ideas</li>
+<li>Incorporate feedback from team</li>
+<li>Begin to develop style guide based on new brand identity, user research</li>
+<li>Move to Sketch, repeat feedback process, moving toward high fidelity mockups in an iterative process</li>
+<li>Develop analytics requirements, produce metrics required for each element and step in user journey</li>
+</ul>
+</div>
+    
+ <div class="col-xs-12 col-md-6 step blank medium">
+</div>
+    
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">User Feedback</div>
+<ul>
+<li>Publish some mockups to longtime subscribers for feedback</li>
+<li>Incorporate ideas before build</li>
+</ul>
+</div>
+    
+ <div class="col-xs-12 col-md-6 step blank medium">
+</div>
+ <div class="col-xs-12 col-md-6 step blank medium">
+</div>
+    
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">Development Design</div>
+<ul>
+<li>Work with team to choose tech stack, set up Git repo</li>
+<li>Complete technical requirement documentation</li>
+<li>Co-create guides for interactive elements, expected behaviour</li>
+<li>Select programming languages and frameworks (React, Bootstrap, SCSS)</li>
+</ul>
+</div>
+    
+<div class="col-xs-12 col-md-6 step blank big">
+</div>
+    
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">Prototyping</div>
+<ul>
+<li>Translate first wireframes into HTML and SCSS (rapid prototyping)</li>
+<li>Solicit feedback from other designers at incubator</li>
+<li>Return to research and user personas, testing new interface</li>
+<li>Refine, iterate first prototypes based on feedback until they are ready to be duplicated</li>
+<li>Continue building</li>
+</ul>
+</div>
+    
+<div class="col-xs-12 col-md-6 step left">
+<div class="col-md-12 title">User Feedback</div>
+<ul>
+<li>Send weekly screenshots of new features to users for feedback</li>
+<li>Collect internal feedback in weekly design review meetings</li>
+<li>Once complete sections are ready for testing, make available to all paid users</li>
+<li>Track feedback on sections with FullStory, Google Analytics, surveys, and interviews (Intercom)</li>
+</ul>
+</div>
+</div><!--end position 1, Crowdbabble-->
+
+</div><!--end processes-->
+	<div class="col-md-12">
+   <span class="totop"> <a href="index.html#top" alt="Return to the top of the page" title="Return to the top of the page"><div class="arrowup"></div></a></span>
+</div>
+</div>
+</div>
+
+    
+</div><!---end positions--->
+</div><!---end main--->
+</div><!---end wrapper--->
+
+    
+    
+<footer>
+<div class="col-md-12">
+<div class="col-md-6 name">
+<h4>About</h4>
+<p>Made with Bootstrap, HTML5, CSS3, and JavaScript. Please <a href="https://docs.google.com/forms/d/e/1FAIpQLSf5A3nIqTEx5PCAAvwYfZlC9wbbguvG8SFeuVEud5wOzhI-bA/viewform?usp=sf_link" target="_blank" alt="Google Survey will open in a new tab">share your feedback on this website</a>. </p><br/><p>Katie Meyer © 2021</p></div>
+<div class="col-md-6"></div>
+<div class="col-md-12">
+   <span class="totop"> <a href="index.html#top" alt="Return to the top of the page" title="Return to the top of the page"><div class="arrowup"></div></a></span>
+</div>
+</div>
+</footer>
+
+
+</body>
+</html>
