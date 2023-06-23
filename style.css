@@ -141,6 +141,18 @@ header:after {
     background-size: cover;
 }
 
+@media only screen and (max-width: 600px) {
+    nav ul {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    nav ul li {
+        flex: 0 0 auto;
+    }
+}
+
 
 /* Footer */
 footer {
