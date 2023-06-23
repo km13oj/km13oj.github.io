@@ -67,63 +67,69 @@ p.small {
 
 /* Header and Footer */
 /* --- Navigation Bar Styles --- */
-.menu {
-    background-color: var(--blue-chalk);
+nav {
+    background: var(--blue);
+    width: 100%;
     height: 80px;
-    display: flex;
-    align-items: center;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-}
-
-.menu ul li {
-    padding: 0 15px;
-}
-
-.menu ul li.name {
-    margin-right: auto;
-}
-
-.menu ul li a {
-    color: var(--white-chalk);
-    text-decoration: none;
-    display: block;
-    padding: 20px 0;
-}
-
-.menu ul li a:hover {
-    background-color: var(--green-chalk);
-}
-
-.menu::after {
-    content: "";
-    display: block;
     position: relative;
-    width: 100%;
-    height: 20px;
-    background: url('curve.svg') repeat-x bottom/100% 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
 }
-/* --- Responsive Styles for Mobile --- */
+
+nav:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--blue);
+    z-index: -1;
+    clip-path: ellipse(80% 70% at 50% 100%);
+}
+
+nav h1 {
+    color: var(--chalky-white);
+    font-size: 1.6em;
+    font-weight: 400;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 15px;
+    padding: 5px 10px;
+}
+
+nav ul li a {
+    color: var(--chalky-white);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    color: var(--dark-blue);
+    background-color: var(--chalky-white);
+}
+
 @media only screen and (max-width: 600px) {
-    .menu {
-        height: 60px;
+    nav ul {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
     }
-    .menu ul li {
-        padding: 0 10px;
-    }
-    .menu ul li a {
-        padding: 15px 0;
+
+    nav ul li {
+        flex: 0 0 auto;
     }
 }
 
