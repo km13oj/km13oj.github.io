@@ -91,69 +91,82 @@ header, footer {
 }
 
 /* Menu */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+h1, a {
+    font-family: 'Merriweather', serif;
+}
+
 nav {
-    background: var(--blue);
-    width: 100%;
-    height: 80px;
-    position: relative;
-    z-index: 10;
+    background-color: #50758E;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1em;
-}
-
-nav:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: var(--blue);
-    z-index: -1;
-    clip-path: ellipse(80% 70% at 50% 100%);
+    padding: 0 2em;
+    height: 80px;
+    position: relative;
+    z-index: 2;
 }
 
 nav h1 {
-    color: var(--chalky-white);
-    font-size: 1.6em;
-    font-weight: 400;
+    color: #D7C49E;
+    font-size: 1.2em;
+    padding: 10px 0;
 }
 
 nav ul {
-    list-style-type: none;
     display: flex;
-    padding-left: 0;
-    align-items: center;
+    gap: 2em;
 }
 
-nav ul li {
-    margin-left: 15px;
-    padding: 5px 10px;
+nav li {
+    list-style: none;
 }
 
-nav ul li a {
-    color: var(--chalky-white);
+nav a {
+    color: #D7C49E;
     text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
+    padding: 10px;
 }
 
-nav ul li a:hover, nav ul li a:focus {
-    color: var(--dark-blue);
-    background-color: var(--chalky-white);
+nav a:hover {
+    color: #A8C0BB;
 }
 
-@media only screen and (max-width: 600px) {
-    nav ul {
-        display: flex;
-        overflow-x: auto;
-        white-space: nowrap;
+.curve-bottom {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #50758E;
+    border-radius: 0 0 50% 50%/0 0 30px 30px;
+    z-index: 1;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
     }
 
-    nav ul li {
-        flex: 0 0 auto;
+    nav h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        gap: 1em;
+        padding: 0 1em;
+        margin-bottom: 1em;
     }
 }
 
