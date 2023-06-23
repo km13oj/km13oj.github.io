@@ -66,107 +66,64 @@ p.small {
 }
 
 /* Header and Footer */
-header, footer {
-    background-color: var(--chalky-black);
-    color: var(--beige);
-    line-height: 40px;
-    position: relative;
-    width: 100%;
+/* --- Navigation Bar Styles --- */
+.menu {
+    background-color: var(--blue-chalk);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-header::after, footer::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Menu */
-/* Header and Footer */
-header, footer {
-    background-color: var(--dark-green);
-    color: var(--beige);
-    line-height: 80px;
-    position: relative;
-    width: 100%;
-}
-
-/* Menu */
-body, h1, h2, h3, h4, h5, h6, p, ul, li {
+.menu ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-}
-
-h1, a {
-    font-family: 'Merriweather', serif;
-}
-
-nav {
-    background-color: #50758E;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2em;
-    height: 80px;
-    position: relative;
-    z-index: 2;
+    justify-content: flex-end;
+    width: 100%;
 }
 
-nav h1 {
-    color: #D7C49E;
-    font-size: 1.2em;
-    padding: 10px 0;
+.menu ul li {
+    padding: 0 15px;
 }
 
-nav ul {
-    display: flex;
-    gap: 2em;
+.menu ul li.name {
+    margin-right: auto;
 }
 
-nav li {
-    list-style: none;
-}
-
-nav a {
-    color: #D7C49E;
+.menu ul li a {
+    color: var(--white-chalk);
     text-decoration: none;
-    padding: 10px;
+    display: block;
+    padding: 20px 0;
 }
 
-nav a:hover {
-    color: #A8C0BB;
+.menu ul li a:hover {
+    background-color: var(--green-chalk);
 }
 
-.curve-bottom {
+.menu::after {
+    content: "";
+    display: block;
     position: relative;
     width: 100%;
-    height: 60px;
-    background: #50758E;
-    border-radius: 0 0 50% 50%/0 0 30px 30px;
-    z-index: 1;
+    height: 20px;
+    background: url('curve.svg') repeat-x bottom/100% 100%;
 }
-
-/* Mobile */
-@media screen and (max-width: 768px) {
-    nav {
-        flex-wrap: wrap;
+/* --- Responsive Styles for Mobile --- */
+@media only screen and (max-width: 600px) {
+    .menu {
+        height: 60px;
     }
-
-    nav h1 {
-        width: 100%;
-        text-align: center;
+    .menu ul li {
+        padding: 0 10px;
     }
-
-    nav ul {
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        gap: 1em;
-        padding: 0 1em;
-        margin-bottom: 1em;
+    .menu ul li a {
+        padding: 15px 0;
     }
 }
 
